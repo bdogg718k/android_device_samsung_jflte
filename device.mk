@@ -85,10 +85,8 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.qcom.usb.rc \
     init.target.rc \
-    ueventd.qcom.rc
-
-# Torch
-PRODUCT_PACKAGES += Torch
+    ueventd.qcom.rc \
+    init.local.rc
 
 # Wifi
 PRODUCT_PACKAGES += \
