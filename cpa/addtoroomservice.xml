@@ -5,3 +5,4 @@
 
 <remove-project name="packages_apps_Mms" />
 <project path="packages/apps/Mms" name="Liquid-CPA/android_packages_apps_Mms" remote="gh" revision="kitkat"/>
+<project path="frameworks/opt/telephony-msim" name="Liquid-CPA/android_frameworks_opt_telephony-msim" remote="gh" revision="kitkat" />
