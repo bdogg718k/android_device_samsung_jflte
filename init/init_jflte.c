@@ -130,6 +130,8 @@ void vendor_load_properties()
         property_set("ro.build.fingerprint", "samsung/jflteusc/jflteusc:4.2.2/JDQ39/R970VXUAMD9:user/release-keys");
         property_set("ro.telephony.default_cdma_sub", "0");
         property_set("ro.telephony.ril.v3", "newDriverCallU");
+        property_set("ro.cdma.home.operator.alpha", "U.S.Cellular");
+        property_set("ro.cdma.home.operator.numeric", "311580");
         property_set("telephony.lteOnCdmaDevice", "1");
         property_set("ro.telephony.default_network", "8");
         property_set("telephony.sms.pseudo_multipart", "1");
