@@ -1,10 +1,20 @@
 #
-# If you want my custom Mms in your build, copy and paste the below
-# directly into .repo/local_manifests/roomservice.xml
+# If you (a) want my custom Mms in your build and/or (b) want to build my kernel
+# by itself, copy and paste the lines below into .repo/local_manifests/roomservice.xml 
+# at the bottom of the dependency lines that should already be there.
 #
 
-<remove-project name="packages_apps_Mms" />
-<project path="packages/apps/Mms" name="Liquid-CPA/android_packages_apps_Mms" remote="gh" revision="kitkat"/>
-<project path="frameworks/opt/telephony-msim" name="Liquid-CPA/android_frameworks_opt_telephony-msim" remote="gh" revision="kitkat" />
-<remove-project name="android_build" />
-<project path="build" name="android_build" remote="ls" revision="jflte"/>
+....
+....
+....
+....
+
+  <!--Add these lines to pull in my custom Mms apk-->
+  <remove-project name="packages_apps_Mms" />
+  <project path="packages/apps/Mms" name="Liquid-CPA/android_packages_apps_Mms" remote="gh" revision="kitkat"/>
+
+  <!--Add these lines if you want to build PoKernel by itself (using 'make bootzip' command)-->
+  <remove-project name="android_build" />
+  <project path="build" name="android_build" remote="ls" revision="jflte"/>
+  
+</manifest>
