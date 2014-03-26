@@ -1,6 +1,7 @@
 #
-# If you (a) want my custom Mms in your build and/or (b) want to build my kernel
-# by itself, copy and paste the lines below into .repo/local_manifests/roomservice.xml 
+# If you (a) want my custom Mms in your build, (b) want to build my kernel
+# by itself, and/or (c) want to build with the OC version of my kernel, copy 
+# and paste the lines below into .repo/local_manifests/roomservice.xml 
 # at the bottom of the dependency lines that should already be there.
 #
 
@@ -16,5 +17,9 @@
   <!--Add these lines if you want to build PoKernel by itself (using 'make bootzip' command)-->
   <remove-project name="android_build" />
   <project path="build" name="android_build" remote="ls" revision="jflte"/>
+  
+  <!--Add these lines if you want to build the ROM with the OC version of PoKernel-->
+  <remove-project name="android_kernel_samsung_jf" />
+  <project path="kernel/samsung/jf" name="android_kernel_samsung_jf" remote="ls" revision="kitkat"/>
   
 </manifest>
