@@ -24,6 +24,7 @@ BOARD_KERNEL_BASE            := 0x80200000
 BOARD_MKBOOTIMG_ARGS         := --ramdisk_offset 0x02000000
 BOARD_KERNEL_PAGESIZE        := 2048
 TARGET_KERNEL_VARIANT_CONFIG := poke_defconfig
+TARGET_KERNEL_SELINUX_CONFIG := jfselinux_defconfig
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := sm-arm-eabi-4.7
 TARGET_GCC_VERSION_ARM := sm-arm-eabi-4.7
 
@@ -110,6 +111,9 @@ TARGET_ADD_ISO_MODE_HJR := true
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := jflte,jfltexx,i9505,GT-I9505,jgedlte,i9505g,GT-I9505G,jfltevzw,jfltespr,jflterefreshspr,jfltetmo,jfltecri,jfltecsp,jflteatt,jfltecan,jflteusc,jfltezm
+
+# Kernel
+TARGET_KERNEL_CONFIG         := jf_eur_defconfig
 
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/jflte/releasetools
