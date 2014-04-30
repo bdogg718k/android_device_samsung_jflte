@@ -42,6 +42,10 @@ PRODUCT_PACKAGES += \
     fsck.f2fs \
     fibmap.f2fs
 
+# Custom busybox with F2FS support
+PRODUCT_PACKAGES += \
+    device/samsung/jflte/overlay/external/busybox:sbin/busybox
+
 # Wifi
 PRODUCT_COPY_FILES += \
     device/samsung/jflte/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
@@ -86,7 +90,8 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     init.target.rc \
     ueventd.qcom.rc \
-    init.local.rc
+    init.local.rc \
+    check_fs.sh
 
 # Wifi
 PRODUCT_PACKAGES += \
