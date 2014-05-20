@@ -119,3 +119,6 @@ TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/jflte/releasetools
 
 # cmhw
 BOARD_HARDWARE_CLASS += device/samsung/jflte/cmhw/
+
+# External apps on SD
+TARGET_EXTERNAL_APPS = sdcard1
