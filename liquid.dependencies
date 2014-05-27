@@ -12,7 +12,7 @@
     "revision": "cm-11.0"
   },
   {
-    "remote": "ls",
+    "remote": "lsd",
     "repository": "android_kernel_samsung_jf",
     "target_path": "kernel/samsung/jf",
     "revision": "kitkat"
