@@ -42,6 +42,9 @@ PRODUCT_PACKAGES += \
     fsck.f2fs \
     fibmap.f2fs
 
+PRODUCT_COPY_FILES += \
+    device/samsung/jflte/format-system.sh:system/extras/format-system.sh
+
 # Wifi
 PRODUCT_COPY_FILES += \
     device/samsung/jflte/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
