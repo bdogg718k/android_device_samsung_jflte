@@ -42,6 +42,7 @@ WIFI_DRIVER_MODULE_PATH := "/system/lib/modules/dhd.ko"
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_USES_QCOM_BSP := true
 COMMON_GLOBAL_CFLAGS += -DQCOM_HARDWARE -DQCOM_BSP
+COMMON_GLOBAL_CFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS
 
 # Adreno configuration
 BOARD_EGL_CFG := device/samsung/jflte/configs/egl.cfg
