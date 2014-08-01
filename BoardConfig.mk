@@ -38,6 +38,9 @@ WIFI_DRIVER_MODULE_ARG := "firmware_path=/system/etc/wifi/bcmdhd_sta.bin nvram_p
 WIFI_DRIVER_MODULE_NAME := "dhd"
 WIFI_DRIVER_MODULE_PATH := "/system/lib/modules/dhd.ko"
 
+# GPS
+BOARD_HAVE_NEW_QC_GPS := true
+
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_USES_QCOM_BSP := true
