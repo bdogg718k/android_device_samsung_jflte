@@ -2,7 +2,3 @@ Copyright 2012 - The CyanogenMod Project
 Copyright 2014 - The LiquidSmooth Project
 
 Common device configuration for Samsung Galaxy S4 (Qualcomm Variants)
-
-NOTE: If you want to replicate my build for jflte, navigate to the /cpa folder 
-of the this device tree and open "addtoroomservice.xml"; then follow the instructions
-in it (you guessed it...adding some stuff to the roomservice).

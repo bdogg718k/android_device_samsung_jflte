@@ -81,10 +81,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy.conf:system/etc/audio_policy.conf \
     $(LOCAL_PATH)/audio/snd_soc_msm_2x_Fusion3:system/etc/snd_soc_msm/snd_soc_msm_2x_Fusion3
 
-# Universal FS compatibility
-PRODUCT_COPY_FILES += \
-    device/samsung/jflte/format-system.sh:system/extras/format-system.sh
-
 # Bluetooth
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/bluetooth/bcm4335_prepatch.hcd:system/vendor/firmware/bcm4335_prepatch.hcd
@@ -113,7 +109,8 @@ PRODUCT_PACKAGES += \
     gps.msm8960
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/gps/gps.conf:/system/etc/gps.conf
+    $(LOCAL_PATH)/gps/etc/gps.conf:/system/etc/gps.conf \
+    $(LOCAL_PATH)/gps/etc/sap.conf:/system/etc/sap.conf
 
 # IR
 PRODUCT_PACKAGES += \
@@ -211,3 +208,7 @@ PRODUCT_COPY_FILES += \
 
 # Common Qualcomm
 $(call inherit-product, device/samsung/qcom-common/qcom-common.mk)
+
+# F2FS
+PRODUCT_COPY_FILES += \
+    device/samsung/jflte/format-system.sh:system/extras/format-system.sh
