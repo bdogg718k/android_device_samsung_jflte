@@ -212,3 +212,7 @@ $(call inherit-product, device/samsung/qcom-common/qcom-common.mk)
 # F2FS
 PRODUCT_COPY_FILES += \
     device/samsung/jflte/format-system.sh:system/extras/format-system.sh
+
+# Frandom init.d
+PRODUCT_COPY_FILES += \
+    device/samsung/jflte/00_frandom:system/etc/init.d/00_frandom
