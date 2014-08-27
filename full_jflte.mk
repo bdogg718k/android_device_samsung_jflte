@@ -23,6 +23,7 @@
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
 # Inherit from jfltetmo device
 $(call inherit-product, device/samsung/jflte/device.mk)
 
@@ -32,3 +33,10 @@ PRODUCT_DEVICE := jflte
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_MODEL := jflte
+
+# inherit from the EOS vendor, if present
+$(call inherit-product, vendor/eos/config/common_full_phone.mk)
+
+# Copy Bootanimation
+PRODUCT_COPY_FILES += \
+vendor/eos/prebuilt/common/bootanimation/1080.zip:system/media/bootanimation.zip
